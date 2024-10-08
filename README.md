@@ -24,6 +24,23 @@
   An Upstream Application is the actual backend service that handles the requests forwarded by Kong. In Kong, an upstream object can represent a group of backend servers, allowing for load balancing and health checks.
   
 </details>
+<details>
+  <summary>Relationship between Service & Route & Upstream application</summary>
+  <br/>
+
+  **Route to Service:** A single route can be mapped to a single service. This means that a specific path or request pattern will always be directed to one particular service.
+
+  _Example:_ A route `/api/v1/users` is mapped to a service `user-service`.
+  
+  **Service to Upstream Applications:** A single service can be associated with multiple upstream applications. This is useful for load balancing and redundancy.
+
+   _Example:_ The `user-service ` can forward requests to multiple instances of the user API running on different servers.
+
+   **Routes to Service:** Multiple routes can be mapped to a single service. This allows different paths or request patterns to be handled by the same backend service.
+
+   _Example:_ Routes `/api/v1/users` and `/api/v1/profiles` both map to the `user-service`.
+  
+</details>
 
 ### Fundamental concepts
 
