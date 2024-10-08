@@ -1,1 +1,5 @@
-# kong-gateway-keycloack
+# Kong Gateway Keycloack
+
+## Kong API Gateway
+
+### Terminology
