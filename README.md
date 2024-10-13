@@ -56,3 +56,5 @@
 
   _Example:_ Imagine you have a service called `example-service` that points to an upstream API at `http://example.com`. You create a route that matches requests with the path `/example` and associates it with `example-service`. When a client makes a request to `http://kong-gateway.com/example`, Kong matches this request to the route, forwards it to `example-service`, which then proxies it to `http://example.com`.
 </details>
+
+### Kong plugin
