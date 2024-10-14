@@ -57,6 +57,40 @@
   _Example:_ Imagine you have a service called `example-service` that points to an upstream API at `http://example.com`. You create a route that matches requests with the path `/example` and associates it with `example-service`. When a client makes a request to `http://kong-gateway.com/example`, Kong matches this request to the route, forwards it to `example-service`, which then proxies it to `http://example.com`.
 </details>
 
+### Kong Ingress Controller
+
+<details>
+  <summary>Architecture of Kong Ingress Controller</summary>
+  <br/>
+
+  Kong Ingress Controller configures using Ingress resources created inside a Kubernetes cluster.
+
+  !()[images/high-level-design.png]
+
+  The Controller listens for the changes inside the Kubernetes cluster and updates Kong in response to those changes. So that it can correctly proxy all the traffic. 
+
+  _Note:_ All requests flowing through Kong are not directed through **kube-proxy** but directly to the **Pod**.
+  
+</details>
+
+<details>
+  <summary>Ingress in Kong</summary>
+  <br/>
+
+  An Ingress resource in Kubernetes defines a set of rules for proxying traffic. These rules correspond to the concept of a route in Kong.
+
+  !()[images/k8s-to-kong.png]
+  
+</details>
+
 ### Kong plugin
+
+<details>
+  <summary>How Kong API work?</summary>
+  <br/>
+
+  
+  
+</details>
 
 
