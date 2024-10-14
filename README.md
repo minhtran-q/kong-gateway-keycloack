@@ -65,7 +65,7 @@
 
   Kong Ingress Controller configures using Ingress resources created inside a Kubernetes cluster.
 
-  !()[images/high-level-design.png]
+  ![](images/high-level-design.png)
 
   The Controller listens for the changes inside the Kubernetes cluster and updates Kong in response to those changes. So that it can correctly proxy all the traffic. 
 
@@ -79,7 +79,7 @@
 
   An Ingress resource in Kubernetes defines a set of rules for proxying traffic. These rules correspond to the concept of a route in Kong.
 
-  !()[images/k8s-to-kong.png]
+  ![](images/k8s-to-kong.png)
   
 </details>
 
