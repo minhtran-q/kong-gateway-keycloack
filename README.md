@@ -39,6 +39,8 @@
    **Routes to Service:** Multiple routes can be mapped to a single service. This allows different paths or request patterns to be handled by the same backend service.
 
    _Example:_ Routes `/api/v1/users` and `/api/v1/profiles` both map to the `user-service`.
+
+  ![](images/kong-api-gateway.png)
   
 </details>
 
